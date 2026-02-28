@@ -1,0 +1,198 @@
+/* Default (Light Mode) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    text-align: center;
+    color: #1f2937;
+}
+
+/* Dark Mode Button */
+#dark-mode-toggle {
+    display: block;
+    margin: 10px auto 20px auto;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #111827;
+    color: white;
+    font-weight: bold;
+}
+
+/* Create post box */
+#new-post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s;
+}
+
+/* Inputs */
+#post-title,
+#post-content {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#post-content {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Publish button */
+#add-post {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#add-post:hover {
+    background-color: #45a049;
+}
+
+/* Posts */
+#posts {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.post {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    transition: background-color 0.3s;
+}
+
+.post small {
+    display: block;
+    color: #6b7280;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+/* Buttons */
+.post button {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.edit-btn {
+    background-color: #facc15;
+    color: black;
+}
+
+.edit-btn:hover {
+    background-color: #eab308;
+}
+
+.delete-btn {
+    background-color: #ef4444;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #dc2626;
+}
+
+/* 🌙 DARK MODE STYLES */
+.dark-mode {
+    background-color: #111827;
+    color: #f9fafb;
+}
+
+.dark-mode h1 {
+    color: #f9fafb;
+}
+
+.dark-mode #new-post {
+    background-color: #1f2937;
+}
+
+.dark-mode .post {
+    background-color: #1f2937;
+}
+
+.dark-mode #post-title,
+.dark-mode #post-content {
+    background-color: #111827;
+    color: white;
+    border: 1px solid #374151;
+}
+
+.dark-mode small {
+    color: #9ca3af;
+}
+
+.post-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+.post strong {
+    font-weight: bold;
+}
+
+.post em {
+    font-style: italic;
+}
+
+.formatting-tools {
+    margin-bottom: 8px;
+}
+
+.formatting-tools button {
+    padding: 6px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* Formatting toolbar */
+.formatting-tools {
+    margin-bottom: 10px;
+}
+
+.formatting-tools button {
+    padding: 6px 12px;
+    margin-right: 6px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    background-color: #444;
+    color: white;
+}
+
+.formatting-tools button:hover {
+    opacity: 0.8;
+}
+
+#search-input {
+    padding: 8px;
+    width: 250px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>My Blog</h1>
+
+    <!-- Dark Mode Toggle -->
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+
+    <hr>
+
+    <!-- Create Post Section -->
+    <div id="new-post">
+        <h2>Create a Post</h2>
+
+        <!-- Title -->
+        <input 
+            type="text" 
+            id="post-title" 
+            placeholder="Post title"
+        >
+        <br><br>
+
+        <!-- Formatting Toolbar -->
+        <div class="formatting-tools">
+            <button id="bold-btn"><b>B</b></button>
+            <button id="italic-btn"><i>I</i></button>
+        </div>
+
+        <!-- Text Colour Picker -->
+        <label for="text-colour">Text Colour:</label>
+        <input type="color" id="text-colour" value="#000000">
+        <br><br>
+
+        <!-- Content Box -->
+        <textarea 
+            id="post-content" 
+            placeholder="Write your post here..."
+            rows="6"
+            cols="60"
+        ></textarea>
+        <br><br>
+
+        <!-- Image Upload -->
+        <label for="image-input">Add Image:</label>
+        <input type="file" id="image-input" accept="image/*">
+        <br><br>
+
+        <!-- Publish Button -->
+        <button id="add-post">Publish Post</button>
+    </div>
+
+    <hr>
+
+    <!-- Search Section -->
+    <h2>Search Posts</h2>
+    <input 
+        type="text" 
+        id="search-input" 
+        placeholder="Search by title or content..."
+    >
+    <br><br>
+
+    <!-- Posts Section -->
+    <div id="posts">
+        <h2>Posts</h2>
+        <!-- Posts (with Edit/Delete) will be inserted here by script.js -->
+    </div>
+
+    <!-- IMPORTANT: Keep this at the bottom -->
+    <script src="script.js"></script>
+
+</body>
+</html>
